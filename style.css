@@ -518,7 +518,8 @@ body {
 }
 
 .project-title-link:hover {
-  color: var(--cyan);
+  color: var(--slate-lightest);
+  opacity: 0.8;
 }
 
 .project-description {
