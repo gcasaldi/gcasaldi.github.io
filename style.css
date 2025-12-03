@@ -319,15 +319,41 @@ body {
   line-height: 12px;
 }
 
+/* Skills Grid - Structured Categories */
+.skills-grid-compact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.skill-category h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cyan);
+  margin-bottom: 12px;
+  font-family: var(--font-mono);
+}
+
+.skill-category .skills-list {
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 0;
+}
+
+.skill-category .skills-list li {
+  font-size: 13px;
+}
+
 .about-image {
   position: relative;
-  max-width: 300px;
+  max-width: 250px;
   margin: 0 auto;
 }
 
 .image-wrapper {
   position: relative;
-  width: 300px;
+  width: 250px;
   border-radius: 4px;
   background-color: var(--cyan);
   transition: var(--transition);
@@ -340,8 +366,8 @@ body {
   height: 100%;
   border: 2px solid var(--cyan);
   border-radius: 4px;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
   z-index: -1;
   transition: var(--transition);
 }
@@ -488,8 +514,30 @@ body {
 .project-description {
   font-size: 16px;
   color: var(--slate);
-  flex-grow: 1;
   line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Project Research Bullets */
+.project-bullets {
+  list-style: none;
+  margin: 15px 0 20px 0;
+  padding: 0;
+}
+
+.project-bullets li {
+  font-size: 14px;
+  color: var(--slate);
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding-left: 0;
+}
+
+.project-bullets strong {
+  color: var(--cyan);
+  font-weight: 500;
+  font-family: var(--font-mono);
+  font-size: 13px;
 }
 
 .project-tech {
@@ -497,7 +545,8 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   list-style: none;
-  margin-top: 20px;
+  margin-top: auto;
+  padding-top: 15px;
   font-family: var(--font-mono);
   font-size: 12px;
   color: var(--slate);
@@ -605,12 +654,17 @@ body {
     font-size: 16px;
   }
   
+  .skills-grid-compact {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
   .skills-list {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
   
   .image-wrapper {
-    width: 250px;
+    width: 200px;
   }
   
   .projects-grid {
