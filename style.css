@@ -511,6 +511,16 @@ body {
   margin-bottom: 15px;
 }
 
+.project-title-link {
+  color: var(--slate-lightest);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.project-title-link:hover {
+  color: var(--cyan);
+}
+
 .project-description {
   font-size: 16px;
   color: var(--slate);
