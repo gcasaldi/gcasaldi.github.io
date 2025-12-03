@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <title>Giulia Casaldi – AI & Cybersecurity Scientist</title>
@@ -9,225 +9,271 @@
   <meta property="og:description" content="AI & Cybersecurity Scientist focused on applied machine learning, threat detection, and digital resilience." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div>
-        <h1 class="site-title">Giulia Casaldi</h1>
-        <p class="site-subtitle">AI &amp; Cybersecurity Scientist</p>
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <div class="nav-inner">
+      <a href="#" class="logo">GC</a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link"><span class="nav-number">01.</span> About</a>
+        <a href="#experience" class="nav-link"><span class="nav-number">02.</span> Experience</a>
+        <a href="#projects" class="nav-link"><span class="nav-number">03.</span> Projects</a>
+        <a href="#contact" class="nav-link"><span class="nav-number">04.</span> Contact</a>
       </div>
-      <nav class="site-nav">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </div>
-  </header>
+  </nav>
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <div class="nav-inner">
+      <a href="#" class="logo">GC</a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link"><span class="nav-number">01.</span> About</a>
+        <a href="#experience" class="nav-link"><span class="nav-number">02.</span> Experience</a>
+        <a href="#projects" class="nav-link"><span class="nav-number">03.</span> Projects</a>
+        <a href="#contact" class="nav-link"><span class="nav-number">04.</span> Contact</a>
+      </div>
+    </div>
+  </nav>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <div class="hero-text-block">
-            <h2>Designing intelligent systems for threat detection and digital resilience.</h2>
-            <p class="hero-text">
-              I work at the intersection of <strong>AI Engineering</strong>, <strong>Cybersecurity</strong> and
-              <strong>Regulation</strong>, building practical tools that help organizations detect, understand and
-              respond to threats with clarity and speed.
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <p class="hero-greeting">Hi, my name is</p>
+        <h1 class="hero-name">Giulia Casaldi.</h1>
+        <h2 class="hero-title">I build intelligent systems for cybersecurity.</h2>
+        <p class="hero-description">
+          I'm an <span class="highlight">AI & Cybersecurity Scientist</span> specializing in machine learning 
+          for threat detection, digital forensics, and operational resilience. I work at the intersection 
+          of AI engineering, security research, and regulatory compliance to design systems that detect, 
+          analyze, and respond to cyber threats with precision and clarity.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="section-container">
+        <h2 class="section-title">
+          <span class="section-number">01.</span> About Me
+        </h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm an AI & Cybersecurity Scientist with advanced training in applied machine learning
+              for threat detection, digital forensics and operational resilience. With a specialized
+              background combining <strong>AI engineering</strong>, <strong>cybersecurity research</strong> and
+              <strong>data science</strong>, I focus on building intelligent systems that detect, analyze
+              and respond to cyber threats with precision and explainability.
             </p>
+            <p>
+              My expertise sits at the rare intersection of <strong>AI-for-cybersecurity</strong>—a field
+              requiring deep understanding of both machine learning fundamentals and adversarial thinking.
+              I have completed advanced training through Johns Hopkins University (AI for Cybersecurity),
+              IBM (AI Engineering), and Harvard (Data Science & CS), combining theoretical rigor with
+              hands-on security operations experience.
+            </p>
+            <p>
+              My work ranges from phishing detection systems and threat analytics pipelines to compliance-aligned
+              security tooling, always prioritizing practical deployment, model explainability, and integration
+              with real-world security operations. I am particularly focused on adversarial ML, behavioral
+              anomaly detection, and how AI can augment human decision-making in incident response and
+              threat investigation.
+            </p>
+            <p>Here are some technologies and areas I work with:</p>
+            <ul class="skills-list">
+              <li>Machine Learning & AI</li>
+              <li>Threat Detection & Analytics</li>
+              <li>Python & FastAPI</li>
+              <li>Digital Forensics (DFIR)</li>
+              <li>Cloud Security</li>
+              <li>SIEM & Log Analysis</li>
+              <li>NLP & Anomaly Detection</li>
+              <li>Regulatory Compliance (DORA, NIS2)</li>
+            </ul>
           </div>
-          <div class="hero-image">
-            <img src="giuliacasaldi.jpg" alt="Giulia Casaldi" />
+          <div class="about-image">
+            <div class="image-wrapper">
+              <img src="giuliacasaldi.jpg" alt="Giulia Casaldi" class="profile-img" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h3 class="section-title">Featured Projects</h3>
-        <div class="cards-grid">
-
-          <article class="card">
-            <h4>PhishForge – AI-powered phishing detection</h4>
-            <p class="card-tagline">
-              Lightweight multi-layer engine for URL &amp; email phishing risk scoring.
-            </p>
-            <p>
-              PhishForge analyzes URLs and emails using heuristics, threat-intelligence checks and a
-              versioned machine learning model. It outputs a 0–100 risk score with an explainable
-              breakdown of suspicious indicators, designed for real-world phishing scenarios.
-            </p>
-            <p class="card-meta">
-              <span><strong>Tech:</strong> Python, FastAPI, Scikit-learn, TF-IDF, Logistic Regression</span><br />
-              <span><strong>Role:</strong> Creator &amp; Lead Engineer</span>
-            </p>
-            <a href="https://gcasaldi.github.io/PhishForge-web/" class="card-link" target="_blank" rel="noopener">Try Live Demo</a>
-          </article>
-
-          <article class="card">
-            <h4>Cyber Threat Analytics &amp; ML Pipelines</h4>
-            <p class="card-tagline">
-              Research-grade experiments in adversarial ML, threat modeling and behavioral analytics.
-            </p>
-            <p>
-              Development of specialized ML pipelines for cybersecurity scenarios including adversarial
-              robustness testing, anomaly detection in network traffic, and automated threat classification.
-              Focus on explainability, real-world deployment constraints, and integration with security
-              operations workflows.
-            </p>
-            <p class="card-meta">
-              <span><strong>Focus:</strong> Adversarial ML, behavioral analytics, threat modeling, automated detection</span><br />
-              <span><strong>Role:</strong> Researcher &amp; Engineer</span>
-            </p>
-          </article>
-
-          <article class="card">
-            <h4>AI &amp; Machine Learning Experiments</h4>
-            <p class="card-tagline">
-              Applied ML for security: anomaly detection, NLP analysis, model explainability.
-            </p>
-            <p>
-              A collection of hands-on projects developed across specializations with Johns Hopkins,
-              IBM and HarvardX. These include experiments in anomaly detection, text classification,
-              phishing-related NLP, and evaluation of deep learning models in security-focused
-              scenarios.
-            </p>
-            <p class="card-meta">
-              <span><strong>Focus:</strong> ML pipelines, evaluation, explainable AI for security</span><br />
-              <span><strong>Role:</strong> Researcher &amp; Engineer</span>
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <h3 class="section-title">Technical Focus</h3>
-        <div class="skills-grid">
-          <div class="skill-block">
-            <h4>AI &amp; Machine Learning</h4>
-            <ul>
-              <li>Supervised &amp; unsupervised learning</li>
-              <li>NLP, vectorization, embeddings</li>
-              <li>Anomaly detection &amp; scoring</li>
-              <li>Model evaluation &amp; explainability</li>
-            </ul>
-          </div>
-          <div class="skill-block">
-            <h4>Cybersecurity</h4>
-            <ul>
-              <li>Phishing &amp; fraud detection</li>
-              <li>Threat intelligence &amp; DFIR</li>
-              <li>SIEM (Splunk), log analysis</li>
-              <li>Cloud security &amp; vulnerability management</li>
-            </ul>
-          </div>
-          <div class="skill-block">
-            <h4>Regulation &amp; Resilience</h4>
-            <ul>
-              <li>DORA &amp; NIS2</li>
-              <li>ISO/IEC 27001 &amp; operational resilience</li>
-              <li>Governance, risk &amp; compliance tooling</li>
-              <li>Security reporting &amp; management dashboards</li>
-            </ul>
-          </div>
-          <div class="skill-block">
-            <h4>Engineering</h4>
-            <ul>
-              <li>Python, FastAPI, REST APIs</li>
-              <li>Git &amp; GitHub workflows</li>
-              <li>Data pipelines &amp; ETL basics</li>
-              <li>Dashboard design &amp; UX for security</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="section">
-      <div class="container">
-        <h3 class="section-title">Selected Certifications &amp; Training</h3>
-        <div class="cert-grid">
-          <div class="cert-col">
-            <ul>
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="section-container">
+        <h2 class="section-title">
+          <span class="section-number">02.</span> Experience & Certifications
+        </h2>
+        <div class="experience-content">
+          <div class="experience-item">
+            <h3>AI & Cybersecurity Specializations</h3>
+            <p class="experience-period">2023 - 2024</p>
+            <ul class="experience-list">
               <li>AI for Cybersecurity – Johns Hopkins University</li>
               <li>IBM AI Engineering Specialization</li>
-              <li>HarvardX – Computer Science Foundations for Data Science</li>
+              <li>HarvardX – Data Science & CS Foundations</li>
             </ul>
           </div>
-          <div class="cert-col">
-            <ul>
-              <li>Splunk Core Certified User &amp; Admin</li>
+          <div class="experience-item">
+            <h3>Security Operations & Tools</h3>
+            <p class="experience-period">2022 - 2024</p>
+            <ul class="experience-list">
+              <li>Splunk Core Certified User & Admin</li>
               <li>Tenable Cloud Security Specialist</li>
-              <li>Cisco Python Essentials 1 &amp; 2</li>
+              <li>Cisco Python Essentials 1 & 2</li>
+              <li>Advanced threat intelligence & security operations training</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section-alt">
-      <div class="container">
-        <h3 class="section-title">About</h3>
-        <div class="about-text">
-          <p>
-            I am an AI &amp; Cybersecurity Scientist with advanced training in applied machine learning
-            for threat detection, digital forensics and operational resilience. With a specialized
-            background combining <strong>AI engineering</strong>, <strong>cybersecurity research</strong> and
-            <strong>data science</strong>, I focus on building intelligent systems that detect, analyze
-            and respond to cyber threats with precision and explainability.
-          </p>
-          <p>
-            My expertise sits at the rare intersection of <strong>AI-for-cybersecurity</strong>—a field
-            requiring deep understanding of both machine learning fundamentals and adversarial thinking.
-            I have completed advanced training through Johns Hopkins University (AI for Cybersecurity),
-            IBM (AI Engineering), and Harvard (Data Science &amp; CS), combining theoretical rigor with
-            hands-on security operations experience.
-          </p>
-          <p>
-            My work ranges from phishing detection systems and threat analytics pipelines to compliance-aligned
-            security tooling, always prioritizing practical deployment, model explainability, and integration
-            with real-world security operations. I am particularly focused on adversarial ML, behavioral
-            anomaly detection, and how AI can augment human decision-making in incident response and
-            threat investigation.
-          </p>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="section-container">
+        <h2 class="section-title">
+          <span class="section-number">03.</span> Featured Projects
+        </h2>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-folder">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://gcasaldi.github.io/PhishForge-web/" target="_blank" rel="noopener" class="project-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">PhishForge</h3>
+            <p class="project-description">
+              AI-powered phishing detection engine using multi-layer analysis, threat intelligence checks, 
+              and ML-based risk scoring. Outputs 0-100 risk scores with explainable breakdowns of suspicious 
+              indicators for real-world phishing scenarios.
+            </p>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>Scikit-learn</li>
+              <li>TF-IDF</li>
+              <li>ML</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-folder">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">Cyber Threat Analytics</h3>
+            <p class="project-description">
+              Research-grade ML pipelines for cybersecurity including adversarial robustness testing, 
+              network traffic anomaly detection, and automated threat classification with focus on 
+              explainability and security operations integration.
+            </p>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>Adversarial ML</li>
+              <li>Anomaly Detection</li>
+              <li>SIEM</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-folder">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">AI Security Experiments</h3>
+            <p class="project-description">
+              Collection of applied ML projects from Johns Hopkins, IBM, and Harvard specializations. 
+              Includes anomaly detection, NLP for security, text classification, and deep learning 
+              model evaluation in security-focused scenarios.
+            </p>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>NLP</li>
+              <li>Deep Learning</li>
+              <li>Explainable AI</li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h3 class="section-title">Contact</h3>
-        <p class="contact-text">
-          I am open to collaborations, research discussions and challenging projects in AI security
-          and cybersecurity engineering.
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-container-narrow">
+        <h2 class="section-title-center">
+          <span class="section-number">04.</span> Get In Touch
+        </h2>
+        <p class="contact-description">
+          I'm currently open to new opportunities in AI security, threat detection, and cybersecurity 
+          research. Whether you have a challenging project, a collaboration idea, or just want to 
+          connect, I'd love to hear from you.
         </p>
-        <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:gcasaldi.cybersec@gmail.com">gcasaldi.cybersec@gmail.com</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/gcasaldi" target="_blank" rel="noopener">github.com/gcasaldi</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gcasaldi" target="_blank" rel="noopener">linkedin.com/in/gcasaldi</a></li>
-        </ul>
+        <div class="contact-btn-wrapper">
+          <a href="mailto:gcasaldi.cybersec@gmail.com" class="btn-primary">Say Hello</a>
+        </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>&copy; 2025 Giulia Casaldi. All rights reserved.</span>
-      <span>AI & Cybersecurity Research</span>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/gcasaldi" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/gcasaldi" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:gcasaldi.cybersec@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-text">Designed & Built by Giulia Casaldi</p>
     </div>
   </footer>
+
 </body>
 </html>
